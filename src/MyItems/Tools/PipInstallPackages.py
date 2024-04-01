@@ -49,6 +49,7 @@ def PipInstall():
     ,'requests'
     ,'robotframework'
     ,'robotframework-pythonlibcore'
+    ,'robotframework-requests'
     ,'robotframework-ride'
     ,'robotframework-selenium2library'
     ,'robotframework-seleniumlibrary'
