@@ -10,7 +10,9 @@ def PipInstall():
         Selenium = 'selenium==4.10.0'
         
     PackagesList = [
-    'asgiref'
+    'allure-pytest'
+    ,'allure-python-commons'
+    ,'asgiref'
     ,'async-generator'
     ,'attrs'
     ,'certifi'
@@ -25,6 +27,8 @@ def PipInstall():
     ,'h11'
     ,'idna'
     ,'iniconfig'
+    ,'Jinja2'
+    ,'MarkupSafe'
     ,'Naked'
     ,'numpy'
     ,'outcome'
@@ -42,6 +46,8 @@ def PipInstall():
     ,'Pypubsub'
     ,'PySocks'
     ,'pytest'
+    ,'pytest-html'
+    ,'pytest-metadata'
     ,'pytz'
     ,'pywin32'
     ,'PyYAML'
