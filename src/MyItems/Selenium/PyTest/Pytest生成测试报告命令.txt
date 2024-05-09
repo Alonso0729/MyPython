@@ -1,0 +1,77 @@
+pytest-html:
+先通过pip命令安装: pip install pytest-html
+
+命令格式：
+pytest [脚本名称.py] --html=[生成的报告名称.html]
+
+说明：
+1. 最好在[脚本名称.py]所在的目录下打开cmd命令提示符,用全路径可能会报错
+2. [生成的报告名称.html]可以是存在的也可以是不存在的，如果存在则会覆盖之前的报告文件。也可以通过相对路径创建多层目录包含测试报告文件
+
+例子:
+pytest PyTest_111.py --html=report.html
+pytest PyTest_111.py --html=./report/Test_Result.html
+
+汉化报告:
+报告会是英文的，有一些人就喜欢看汉字，可在下列地址找到汉化报告。
+github地址:https://github.com/13691579846/pytest-html
+
+找到后下载源代码，将pytest-html放到python的第三方库目录（\Python\Lib\site-packages）下。如果安装过pytest-html直接替换即可。
+然后在进行执行代码，查看测试报告，就会发现已经变成汉化版本了
+
+具体汉化覆盖操作,参考:https://www.cnblogs.com/linuxchao/p/linuxchao-pytest-html.html
+pytest-html生成报告操作的参考文章地址: https://www.cnblogs.com/qican/p/14281207.html
+----------------------------------------------------------------------------------------------------------------------------
+Allure:
+到https://github.com/allure-framework/allure2/releases 中下载Allure，
+旧版下载地址:https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/
+解压后将bin目录（最好不要有中文名称）添加到系统变量PATH中
+
+如果出现：错误: 找不到或无法加载主类 io.qameta.allure.CommandLine，则参考下列文章。
+JDK与Allure不匹配参考文章: https://www.cnblogs.com/GouHuang/articles/16426411.html
+
+随后通过pip命令安装: 
+pip install allure-pytest
+pip install allure-python-commons
+
+命令格式：
+pytest [脚本名称.py] -s -q --alluredir=[生成的报告路径]
+
+例子:
+pytest PyTest_111.py -s -q --alluredir=./result/
+pytest PyTest_111.py -s -q --alluredir=./result/Allure_Report
+
+查看测试报告
+方式一：直接打开默认浏览器展示报告
+allure serve [生成的报告路径]
+
+例子:
+allure serve ./result/
+allure serve ./result/Allure_Report
+
+方式二：从结果生成报告
+生成报告
+allure generate [生成的报告路径] -o [生成的报告路径] --clean (覆盖路径加--clean)
+
+例子:
+allure generate ./result/ -o ./report/ --clean
+allure generate ./result/Allure_Report -o ./result/Allure_Report
+
+打开报告
+allure open -h 127.0.0.1 -p [端口号] [生成的报告路径]
+
+例子:
+allure open -h 127.0.0.1 -p 8883 ./report/
+allure open -h 127.0.0.1 -p 9876 ./result/Allure_Report
+
+说明：
+1. 最好在[脚本名称.py]所在的目录下打开cmd命令提示符,用全路径可能会报错
+2. [生成的报告路径]可以是存在的也可以是不存在的，如果存在则会覆盖之前的报告文件。也可以通过相对路径创建多层目录包含测试报告文件
+3. Allure生成的报告格式为JSON格式，无法直接打开查看需要通过下列命令继续查看
+
+再执行上述查看测试报告操作，参考文章地址:https://blog.csdn.net/weixin_42760923/article/details/114439831
+
+Allure生成报告操作的参考文章地址: https://www.cnblogs.com/hiyong/p/14163298.html
+----------------------------------------------------------------------------------------------------------------------------
+总结:pytest-html可以直接生成html报告并查看,Allure生成JSON格式再转换通过命令从浏览器打开查看报告。
+从操作性还是生成报告角度看pytest-html比Allure方便,但Allure似乎比pytest-html应用更广泛
