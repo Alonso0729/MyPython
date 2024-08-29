@@ -19,6 +19,7 @@ def PipInstall():
     ,'cffi'
     ,'chardet'
     ,'charset-normalizer'
+    ,'click'
     ,'colorama'
     ,'cryptography'
     ,'ddt'
