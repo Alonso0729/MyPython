@@ -85,13 +85,16 @@ def Send_Mail(smtpserver,port,username,password,sender,receiver,mailname,Latest_
         smtp.connect(smtpserver) # 连服务器
         smtp.login(sender, password)
     except:
-        smtp = smtplib.SMTP_SSL(smtpserver, port)
+        smtp = smtplib.SMTP_SSL(smtpserver)
         smtp.login(sender, password) # 登录
         smtp.sendmail(sender, receiver, msg.as_string()) # 发送
         smtp.quit()
 
     ##发送邮件
-    smtp = smtplib.SMTP()
+    if mailname == 'qq':
+        smtp = smtplib.SMTP_SSL(smtpserver)
+    else:
+        smtp = smtplib.SMTP()
     smtp.connect(smtpserver)
     smtp.login(username, password) # 登录邮箱
     smtp.sendmail(sender, receiver, msg.as_string()) # 发送者和接收者
