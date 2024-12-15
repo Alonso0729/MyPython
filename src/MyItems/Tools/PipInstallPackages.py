@@ -74,6 +74,7 @@ def PipInstall():
     ,'tzdata'
     ,'unrar'
     ,'urllib3'
+    ,'websocket-client'
     ,'WMI'
     ,'wsproto'
     ,'wxPython']
