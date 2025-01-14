@@ -12,20 +12,19 @@ def Via_QQ(Latest_Report_Path,Execute_Time): #发送邮件方法
     #password = 'uvwugrwppapdcahd' #旧的授权码
     password = 'wqcvkpqqhmbjcaaf'#发件箱密码
     sender = 'lonlon29@qq.com' #发件人邮箱
-    receiver = ['lonlon29@sina.cn','Eason.Zhang0731@outlook.com','baron0037@111.com','easonzhang0731@sina.com'] #收件人邮箱
+    receiver = ['lonlon29@sina.cn','Eason.Zhang0731@outlook.com','baron0037@111.com','alonso0729@protonmail.com'] #收件人邮箱
     mailname = 'qq'
     Send_Mail(smtpserver,port,username,password,sender,receiver,mailname,Latest_Report_Path,Execute_Time)
     
 
 def Via_Sina(Latest_Report_Path,Execute_Time): #发送邮件方法
     #-----------1.跟发件相关的参数------
-    smtpserver = 'smtp.sina.com' #发件服务器
+    smtpserver = 'smtp.sina.cn' #发件服务器
     port = 25 #端口
-    username = 'easonzhang0731@sina.com' #发件箱用户名
-    #password = '2e059d17a6db438f' #旧的授权码
-    password = '3f2dd459b3b642f2'#发件箱密码
-    sender = 'easonzhang0731@sina.com' #发件人邮箱
-    receiver = ['lonlon29@qq.com','Eason.Zhang0731@outlook.com','baron0037@111.com','lonlon29@sina.cn'] #收件人邮箱
+    username = 'lonlon29@sina.cn' #发件箱用户名
+    password = '3a5899774b57c55b'#发件箱密码
+    sender = 'lonlon29@sina.cn' #发件人邮箱
+    receiver = ['lonlon29@qq.com','Eason.Zhang0731@outlook.com','baron0037@111.com','alonso0729@protonmail.com'] #收件人邮箱
     mailname = 'sina'
     Send_Mail(smtpserver,port,username,password,sender,receiver,mailname,Latest_Report_Path,Execute_Time)
     
@@ -37,7 +36,7 @@ def Via_Sohu(Latest_Report_Path,Execute_Time): #发送邮件方法
     username = 'baron0037@sohu.com' #发件箱用户名
     password = 'WL2REAXGY5'#发件箱密码
     sender = 'baron0037@sohu.com' #发件人邮箱
-    receiver = ['lonlon29@qq.com','Eason.Zhang0731@outlook.com','lonlon29@sina.cn','easonzhang0731@sina.com'] #收件人邮箱
+    receiver = ['lonlon29@qq.com','Eason.Zhang0731@outlook.com','lonlon29@sina.cn','alonso0729@protonmail.com'] #收件人邮箱
     mailname = 'sohu'
     Send_Mail(smtpserver,port,username,password,sender,receiver,mailname,Latest_Report_Path,Execute_Time)
 '''
@@ -48,7 +47,7 @@ def Via_111Mail(Latest_Report_Path,Execute_Time): #发送邮件方法
     username = 'baron0037@111.com' #发件箱用户名
     password = 'nD4289M7RqajImNI'#发件箱密码
     sender = 'baron0037@111.com' #发件人邮箱
-    receiver = ['lonlon29@qq.com','Eason.Zhang0731@outlook.com','lonlon29@sina.cn','easonzhang0731@sina.com'] #收件人邮箱
+    receiver = ['lonlon29@qq.com','Eason.Zhang0731@outlook.com','lonlon29@sina.cn','alonso0729@protonmail.com'] #收件人邮箱
     mailname = '111Mail'
     Send_Mail(smtpserver,port,username,password,sender,receiver,mailname,Latest_Report_Path,Execute_Time)
 

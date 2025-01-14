@@ -4,14 +4,14 @@
 搜索框 -- id:query
 xpath://input[@id="query"],//input[@name="query"],//input[@class="sec-input active"],//input[contains(@id,"qu")],//input[contains(@name,"que")],//input[contains(@class,"sec")],//input[starts-with(@id,"qu")],//input[starts-with(@name,"que")],//input[starts-with(@class,"sec-")]
 
-总：//input[@id="query" and @name="query" and @class="sec-input active"],
+总：//input[@id="query" and @name="query"],
 //input[contains(@id,"qu") and contains(@name,"que") and contains(@class,"sec")],
 //input[starts-with(@id,"qu") and starts-with(@name,"que") and starts-with(@class,"sec-")]
 
 单引号版本：
 xpath://input[@id='query'],//input[@name='query'],//input[@class='sec-input active'],//input[contains(@id,'qu')],//input[contains(@name,'que')],//input[contains(@class,'sec')],//input[starts-with(@id,'qu')],//input[starts-with(@name,'que')],//input[starts-with(@class,'sec-')]
 
-总：//input[@id='query' and @name='query' and @class='sec-input active'],
+总：//input[@id='query' and @name='query'],
 //input[contains(@id,'qu') and contains(@name,'que') and contains(@class,'sec')],
 //input[starts-with(@id,'qu') and starts-with(@name,'que') and starts-with(@class,'sec-')]
 
