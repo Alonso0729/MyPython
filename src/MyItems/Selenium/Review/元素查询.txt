@@ -44,7 +44,7 @@ xpath://div[@class='sbox-sugg-wrap'],//div[contains(@class,'sbox-sugg-wrap')],//
 
 =========================================================================
 必应：https://cn.bing.com
-首页标题名:"微软 Bing 搜索 - 国内版"
+首页标题名:"搜索 - Microsoft 必应"
 
 搜索框 -- id:sb_form_q
 xpath://input[@id="sb_form_q"],//input[@class="sb_form_q"],//input[@name="q"]
