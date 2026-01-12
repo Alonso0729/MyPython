@@ -65,24 +65,26 @@ xpath://input[@id='sb_form_q'],//input[@class='sb_form_q'],//input[@name='q']
 //input[starts-with(@class,'sb_form_q') and starts-with(@name,'q') and starts-with(@id,'sb_form_q')]
 
 ËÑË÷°´Å¥ -- id:search_icon
-xpath://label[@for="sb_form_go"],//label[@class="search icon tooltip"],//label[@id="search_icon"],//label[@aria-label="ËÑË÷ÍøÒ³"]
-//label[contains(@for,"sb_form_go")],//label[contains(@class,"search icon tool")],//label[contains(@id,"search_ico")],//label[contains(@aria-label,"ËÑË÷")]
-//label[starts-with(@for,"sb_form_g")],//label[starts-with(@class,"search icon")],//label[starts-with(@id,"search_ic")],//label[starts-with(@aria-label,"ËÑË÷Íø")]
+xpath://input[@id="sb_form_go"],//input[@name="search"],//input[@aria-label="Search"]
+//label[@id="search_icon"],//label[@aria-label="ËÑË÷ÍøÒ³"],//label[@for="sb_form_go"]
 
-×Ü£º
-//label[@for="sb_form_go" and @class="search icon tooltip" and  @id="search_icon" and @aria-label="ËÑË÷ÍøÒ³"],
-//label[contains(@for,"sb_form_go") and contains(@class,"search icon tool") and contains(@id,"search_ico") and contains(@aria-label,"ËÑË÷")],
-//label[starts-with(@for,"sb_form_g") and starts-with(@class,"search icon") and starts-with(@id,"search_ic") and starts-with(@aria-label,"ËÑË÷Íø")]
+×Ü£º//input[@id="sb_form_go" and @name="search" and @aria-label="Search"]
+//input[contains(@id,"sb_form_g") and contains(@name,"sear") and contains(@aria-label,"Sea")]
+//input[starts-with(@id,"sb_form_go") and starts-with(@name,"search") and starts-with(@aria-label,"Search")]
+//label[@id="search_icon" and @aria-label="ËÑË÷ÍøÒ³" and @for="sb_form_go"]
+//label[contains(@id,"search_ic") and contains(@aria-label,"ËÑË÷Íø") and contains(@for,"sb_form_g")]
+//label[starts-with(@id,"search_ic") and starts-with(@aria-label,"ËÑË÷") and starts-with(@for,"sb_form_")]
 
 µ¥ÒıºÅ°æ±¾£º
-xpath://label[@for='sb_form_go'],//label[@class='search icon tooltip'],//label[@id='search_icon'],//label[@aria-label='ËÑË÷ÍøÒ³']
-//label[contains(@for,'sb_form_go')],//label[contains(@class,'search icon tool')],//label[contains(@id,'search_ico')],//label[contains(@aria-label,'ËÑË÷')]
-//label[starts-with(@for,'sb_form_g')],//label[starts-with(@class,'search icon')],//label[starts-with(@id,'search_ic')],//label[starts-with(@aria-label,'ËÑË÷Íø')]
+xpath://input[@id='sb_form_go'],//input[@name='search'],//input[@aria-label='Search']
+//label[@id='search_icon'],//label[@aria-label='ËÑË÷ÍøÒ³'],//label[@for='sb_form_go']
 
-×Ü£º
-//label[@for='sb_form_go' and @class='search icon tooltip' and  @id='search_icon' and @aria-label='ËÑË÷ÍøÒ³'],
-//label[contains(@for,'sb_form_go') and contains(@class,'search icon tool') and contains(@id,'search_ico') and contains(@aria-label,'ËÑË÷')],
-//label[starts-with(@for,'sb_form_g') and starts-with(@class,'search icon') and starts-with(@id,'search_ic') and starts-with(@aria-label,'ËÑË÷Íø')]
+×Ü£º//input[@id='sb_form_go' and @name='search' and @aria-label='Search']
+//input[contains(@id,'sb_form_g') and contains(@name,'sear') and contains(@aria-label,'Sea')]
+//input[starts-with(@id,'sb_form_go') and starts-with(@name,'search') and starts-with(@aria-label,'Search')]
+//label[@id='search_icon' and @aria-label='ËÑË÷ÍøÒ³' and @for='sb_form_go']
+//label[contains(@id,'search_ic') and contains(@aria-label,'ËÑË÷Íø') and contains(@for,'sb_form_g')]
+//label[starts-with(@id,'search_ic') and starts-with(@aria-label,'ËÑË÷') and starts-with(@for,'sb_form_')]
 
 ËÑË÷ÈÈ´Ê¿ò -- class:sa_sug_block,tag_name:li,¸ù¾İidÊôĞÔÖµËÑË÷, £¨²»ĞèÒªÈÈ´ÊËÑË÷¿ò£¬ÒòÎªidºÅÒ»Ö±ÔÚ±ä£©
 xpath://div[@id="sa_sug_block"],//div[@id="sa_ul"],//ul[@aria-label="Suggestions"],//ul[@role="listbox"]
